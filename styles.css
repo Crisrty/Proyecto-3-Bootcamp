@@ -8,7 +8,20 @@ body{
 }
 
 .titulo{
-    font-size: 35px;
+    background-image: url("clima.jpg");
+    height: 200px;
+}
+
+.pregunta{
+    font-size: 55px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 240px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.pie{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 250px;
 }
