@@ -14,9 +14,22 @@
     <div class="titulo">
         <h1 class="pregunta">¿Cómo está el clima hoy?</h1>
     </div>
+    <div class="inputTemp">
+        <form class="buscarLugar" id="buscarLugar">
+            <input type="text" class="buscarLugar" id="buscar" placeholder="indica la ubicación">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="inputTemp_number">
+            <div class="inputGrados" id="grados"></div>
+            <div class="simboloGrados">°C</div>
+        </div>
+        <div class="fraseClima" id="climaFrase"></div>
+    </div>
 
     <footer>
         <h3 class="pie"> 2022 DMBC</h3>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
