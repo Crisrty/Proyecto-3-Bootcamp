@@ -1,30 +1,101 @@
-body{
-    background-color: rgb(179, 212, 252);
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-}
-.encabezado{
-    font-size: 20px;
-    margin-left: 750px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: navy;
-}
+* {
+    font-family: 'Patrick Hand', cursive;
+  }
+  
+  :root {
+    --bg-color: #065d80;
+    --text-color: #F3F6F5;
+    font-size: 18px;
+  }
+  
+  body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
 
-.titulo{
-    background-image: url("clima.jpg");
-    height: 200px;
-}
-
-.pregunta{
-    font-size: 55px;
-    font-family: Arial, Helvetica, sans-serif;
+  .encabezado{
+    font-size: 35px;
+    margin-left: 450px;
+  }
+  
+  a {
+    color: var(--text-color)
+  }
+  
+  p {
+    margin-bottom: 0.75rem;
+    line-height: 1.2rem;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px 0px;
+    border-top: 1px solid grey;
+    width: 100%;
     text-align: center;
-    color: aliceblue;
-}
-
-.pie{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .search-form {
+    margin: 20px 20px;
+  }
+  
+  .searchbox {
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    max-width: 480px;
+    margin: 0px auto;
+    border-radius: 3px;
+  }
+  
+  .search {
+    width: 100%;
+    background-color: var(--text-color);
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .search:focus {
+    outline: none;
+  }
+  
+  .weather-card {
+    margin: 20px 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 20px;
     text-align: center;
-    margin-top: 250px;
-    color: navy;
-}
+    border-radius: 3px;
+    display: none;
+  }
+  
+  .city {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .temp-img {
+    width: 180px;
+    margin-right: 10px;
+  }
+  
+  .temp {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .weather {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }

@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima API</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Proyecto 3</title>
 </head>
-<body>
-    <header class="e1">
-        <h1 class="encabezado"> Proyecto 3 Fullstack Bootcamp UCamp</h1>
-    </header>
-    <div class="titulo">
-        <h1 class="pregunta">¿Cómo está el clima hoy?</h1>
-    </div>
-    <div class="inputTemp">
-        <form class="buscarLugar" id="buscarLugar">
-            <input type="text" class="buscarLugar" id="buscar" placeholder="indica la ubicación">
-            <button type="submit">Buscar</button>
-        </form>
-        <div class="inputTemp_number">
-            <div class="inputGrados" id="grados"></div>
-            <div class="simboloGrados">°C</div>
-        </div>
-        <div class="fraseClima" id="climaFrase"></div>
-    </div>
 
-    <footer>
-        <h3 class="pie"> 2022 DMBC</h3>
-    </footer>
 
-    <script src="script.js"></script>
+    <body>
+        <header class="encabezado"> ¿Cómo está el clima hoy?</header>
+        <main>
+          <div class="search-form">
+            <form id="search-form">
+              <div class="searchbox">
+                <input type="text" autocomplete="off" placeholder="Busca tu ciudad" class="search" id="searchbox" />
+              </div>
+            </form>
+          </div>
+          <div class="weather-card" id="card">
+            <div class="city" id="city"></div>
+            <div class="date" id="date"></div>
+            <div class="temperature">
+              <img src="unknown.png" class="temp-img" id="temp-img" />
+              <div class="temp" id="temp">°c</div>
+            </div>
+            <div class="weather" id="weather"></div>
+          </div>
+        </main>
+        <footer>
+            <h1> CBMD 2022 Bootcamp Ucamp</h1>
+        </footer>
+        <script src="main.js"></script>
 </body>
 </html>
