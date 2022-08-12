@@ -31,10 +31,19 @@
             <div class="weather" id="weather"></div>
         </div>
     </main>
-    <footer>
+
+    <!--GRÁFICOS DEL CLIMA-->
+
+    <div class="grafico_gen" id="grafico_gene">
+        <canvas id="myChart" style="height: 100%;" class="myChart"></canvas>
+    </div>
+    <!--FOOTER DE LA PÁGINA-->
+    <footer id="foot">
         <h1> CBMD 2022 Bootcamp Ucamp</h1>
     </footer>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!--<script src="grafica.js"></script>-->
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
