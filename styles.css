@@ -15,7 +15,7 @@ body {
     color: var(--text-color);
 }
 
-.encabezado {
+.encabezado h1 {
     text-align: center;
     width: 100%;
     font-size: 35px;
