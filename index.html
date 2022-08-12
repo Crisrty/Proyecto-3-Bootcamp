@@ -10,24 +10,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<!-- ATENCIÓN!! -->
+<!-- LAS "CLASES" SERÁN UTILIZADAS PARA ESTILIZAR (.CSS) Y LOS "ID" PARA EL SCRIPT (.JS)-->
 
 <body>
+    <!--Título Principal-->
     <header class="encabezado"> ¿Cómo está el clima hoy?</header>
+
+    <!--CUERPO DE LA PÁGINA-->
     <main>
+        <!--CONTENEDOR PRINCIPAL DEL BUSCADOR-->
         <div class="search-form">
             <form id="search-form">
+                <!--CONTENEDOR DEL BOTÓN INVISIBLE-->
                 <div class="searchbox">
                     <input type="text" autocomplete="off" placeholder="Busca tu ciudad" class="search" id="searchbox" />
                 </div>
             </form>
         </div>
+
+        <!--CONTENEDOR PRINCIPAL DE LA PRESENTACIÓN DEL CLIMA-->
         <div class="weather-card" id="card">
             <div class="city" id="city"></div>
             <div class="date" id="date"></div>
+            <!--CONTENEDOR PRINCIPAL DE IMAGEN/TEMPERATURA-->
             <div class="temperature">
-                <img src="unknown.png" class="temp-img" id="temp-img" />
+                <img src="" class="temp-img" id="temp-img" />
                 <div class="temp" id="temp">°c</div>
             </div>
+            <!--CONTENEDOR PRINCIPAL DEL ESTADO DEL CLIMA-->
             <div class="weather" id="weather"></div>
         </div>
     </main>
