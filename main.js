@@ -5,17 +5,22 @@ const api = {
     url: `https://api.openweathermap.org/data/2.5/weather`
 }
 
-const card = document.getElementById('card')
+const card = document.getElementById('card'); //CONTENEDOR PRINCIPAL DE LA PRESENTACIÓN DEL CLIMA.
 
-const city = document.getElementById('city');
-const date = document.getElementById('date');
-const tempImg = document.getElementById('temp-img');
-const temp = document.getElementById('temp');
-const weather = document.getElementById('weather');
+const city = document.getElementById('city'); //DIV - LLAMADO PARA LA CIUDAD.
+const date = document.getElementById('date'); //DIV - LLAMADO PARA LA FECHA.
+const tempImg = document.getElementById('temp-img'); //IMG - LLAMADO PARA LA IMAGEN.
+const temp = document.getElementById('temp'); //DIV - LLAMADO PARA LA TEMPERATURA.
+const weather = document.getElementById('weather'); //DIV - LLAMADO PARA EL ESTADO DEL CLIMA.
 const searchbox = document.getElementById('searchbox'); //BUTTOM - LLAMADO PARA USAR EL BOTÓN.
 const grafico = document.getElementById("grafico_gene");
 const footer = document.getElementById("foot");
 
+//FORM - LLAMADO PARA USAR EL "ADD_EVENT:LISTENER"
+const searchform = document.getElementById('search-form');
+searchform.addEventListener('submit', onSubmit, true);
+
+//FUNCIÓN PARA ACTUALIZAR LA IMÁGEN.
 function updateImages(data) {
     const temp = toCelsius(data.main.temp);
     let src = 'cool.png';
@@ -53,14 +58,13 @@ async function search(ciudad_Buscada) {
     }
 }
 
+//CONVERSIÓN DE KELVIN A CELCIUS
 function toCelsius(kelvin) {
     return Math.round(kelvin - 273.15);
 }
 
+//FUNCIÓN SUBMIT Y LLAMADO DE LA FUNCIÓN "SEARCH"
 function onSubmit(event) {
     event.preventDefault();
     search(searchbox.value);
 }
-
-const searchform = document.getElementById('search-form');
-searchform.addEventListener('submit', onSubmit, true);
