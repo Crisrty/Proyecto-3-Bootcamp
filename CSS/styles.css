@@ -49,10 +49,8 @@ main {
 }
 
 .weather-card {
-    margin: 20px 20px;
     background: var(--text-color);
     color: var(--bg-color);
-    padding: 20px;
     text-align: center;
     border-radius: 3px;
     display: none;
@@ -88,7 +86,6 @@ main {
 .grafico_gen {
     background-color: #c2c2c2;
     border: 2px solid black;
-    margin: 50px 200px;
     visibility: hidden;
 }
 
