@@ -15,6 +15,10 @@ body {
     color: var(--text-color);
 }
 
+main {
+    padding: 20 xp;
+}
+
 .encabezado h1 {
     text-align: center;
     width: 100%;
@@ -64,7 +68,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .temp-img {
