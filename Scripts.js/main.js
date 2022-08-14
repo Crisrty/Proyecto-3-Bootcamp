@@ -23,11 +23,11 @@ searchform.addEventListener('submit', onSubmit, true);
 //FUNCIÓN PARA ACTUALIZAR LA IMÁGEN.
 function updateImages(data) {
     const temp = toCelsius(data.main.temp);
-    let src = '../Images/cool.png';
+    let src = "/Proyecto-3-Bootcamp/Images/cool.png";
     if (temp >= 26) {
-        src = '../Images/calors.jpg';
+        src = "/Proyecto-3-Bootcamp/Images/calors.jpg";
     } else if (temp < 20) {
-        src = '../Images/Frio.jpg';
+        src = "/Proyecto-3-Bootcamp/Images/Frio.jpg";
     }
     tempImg.src = src;
 }
